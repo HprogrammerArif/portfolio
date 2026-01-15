@@ -20,7 +20,7 @@ export default function Navbar() {
               height={navbarConfig.logo.height}
             />
           </Link>
-          <div className="flex items-center justify-center gap-4">
+          {/* <div className="flex items-center justify-center gap-4">
             {navbarConfig.navItems.map((item) => (
               <Link
                 className="transition-all duration-300 ease-in-out hover:underline hover:decoration-2 hover:underline-offset-4"
@@ -30,9 +30,20 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-          </div>
+          </div> */}
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-8">
+           <div className="flex items-center justify-center gap-4">
+            {navbarConfig.navItems.map((item) => (
+              <Link
+                className="transition-all duration-300 ease-in-out font-semibold hover:underline hover:decoration-2 hover:underline-offset-4"
+                key={item.label}
+                href={item.href}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
           <ThemeToggleButton variant="circle" start="top-right" blur />
         </div>
       </div>
