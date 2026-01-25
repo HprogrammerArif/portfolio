@@ -3,8 +3,8 @@ import * as z from 'zod';
 
 const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
 
-const RATE_LIMIT_WINDOW = 60 * 1000;
-const RATE_LIMIT_MAX_REQUESTS = 5;
+const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
+const RATE_LIMIT_MAX_REQUESTS = 3; // Reduced from 5 to 3
 
 const contactSchema = z.object({
   name: z.string().min(2).max(100),
@@ -129,17 +129,20 @@ export async function POST(request: NextRequest) {
     const rateLimit = checkRateLimit(clientIP);
 
     if (!rateLimit.allowed) {
+      const resetTime = Math.ceil(RATE_LIMIT_WINDOW / 1000);
       return NextResponse.json(
         {
           error: 'Too many requests. Please try again later.',
-          retryAfter: RATE_LIMIT_WINDOW / 1000,
+          retryAfter: resetTime,
+          message: `You can send ${RATE_LIMIT_MAX_REQUESTS} messages per minute. Please wait ${resetTime} seconds.`,
         },
         {
           status: 429,
           headers: {
             'X-RateLimit-Limit': RATE_LIMIT_MAX_REQUESTS.toString(),
-            'X-RateLimit-Remaining': rateLimit.remaining.toString(),
+            'X-RateLimit-Remaining': '0',
             'X-RateLimit-Reset': (Date.now() + RATE_LIMIT_WINDOW).toString(),
+            'Retry-After': resetTime.toString(),
           },
         },
       );

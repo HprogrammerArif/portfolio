@@ -53,8 +53,8 @@ export const skillComponents = {
 
 export const heroConfig = {
   // Personal Information
-  name: 'Arif (RakibHasan)',
-  title: 'A Full Stack web developer.',
+  name: 'Rakib Hasan (Arif)',
+  title: 'Jr. Fullstack developer.',
   avatar: '/assets/logo.png',
 
   // Skills Configuration
@@ -93,9 +93,8 @@ export const heroConfig = {
 
   // Description Configuration
   description: {
-    template:
-      'I build interactive web apps using {skills:0}, {skills:1}, {skills:2}, {skills:3}, {skills:4} and {skills:5}. With a focus on <b>UI</b> design. Enthusiastic about <b>Three.js</b>, driven by a keen eye for design.',
-  },
+  template: 'I\'m a <b>React Native expert</b> specializing in cross-platform mobile apps for <b>Android & iOS</b>. I also build interactive web apps using {skills:0}, {skills:1}, {skills:2}, {skills:3}, {skills:4} and {skills:5}, with a strong focus on <b>UI design</b> and scalable solutions.',
+},
 
   // Buttons Configuration
   buttons: [
