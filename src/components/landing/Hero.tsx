@@ -97,13 +97,14 @@ export default function Hero() {
         {socialLinks.map((link) => (
           <Tooltip key={link.name} delayDuration={0}>
             <TooltipTrigger asChild>
-              <Link
+              <a
                 href={link.href}
-                key={link.name}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-secondary flex items-center gap-2"
               >
                 <span className="size-6">{link.icon}</span>
-              </Link>
+              </a>
             </TooltipTrigger>
             <TooltipContent>
               <p>{link.name}</p>

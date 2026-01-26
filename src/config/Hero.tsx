@@ -55,7 +55,7 @@ export const heroConfig = {
   // Personal Information
   name: 'Rakib Hasan (Arif)',
   title: 'Jr. Fullstack developer.',
-  avatar: '/assets/logo.png',
+  avatar: '/assets/logo.JPG',
 
   // Skills Configuration
   skills: [
@@ -117,22 +117,22 @@ export const heroConfig = {
 export const socialLinks = [
   {
     name: 'X',
-    href: 'https://x.com/ramxcodes',
+    href: 'https://x.com/ArifMohamm27618',
     icon: <X />,
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ramxcodes/',
+    href: 'https://www.linkedin.com/in/work-mohammed-arif/',
     icon: <LinkedIn />,
   },
   {
     name: 'Github',
-    href: 'https://github.com/ramxcodes',
+    href: 'https://github.com/HprogrammerArif',
     icon: <Github />,
   },
   {
     name: 'Email',
-    href: 'mailto:ramxcodes@gmail.com',
+    href: 'mailto:rakibhasancodes@gmail.com',
     icon: <Mail />,
   },
 ];
