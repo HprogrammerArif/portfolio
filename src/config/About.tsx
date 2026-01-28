@@ -6,6 +6,8 @@ import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
+import ReactNative from '@/components/technologies/ReactNative';
+import Redux from '@/components/technologies/Redux';
 import TypeScript from '@/components/technologies/TypeScript';
 
 export const mySkills = [
@@ -18,9 +20,12 @@ export const mySkills = [
   <NodeJs key="nodejs" />,
   <PostgreSQL key="postgresql" />,
   <Prisma key="prisma" />,
+  <ReactNative key="react native"/>,
+  <Redux key="redux"/>
+  
 ];
 
 export const about = {
-  name: 'Ramkrishna Swarnkar',
-  description: `I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's.`,
+  name: 'Mohammed Arif',
+  description: `I'm a Jr. Full Stack web developer and problem solver, I love building products to solve real-world problems. I'm specialized in building cross platform mobile apps.`,
 };
