@@ -1,4 +1,4 @@
-// oneko.js: https://github.com/adryd325/oneko.js
+// oneko.js: https://github.com/adryd325/oneko.js (webring variant)
 
 (function oneko() {
   const isReducedMotion =
@@ -7,13 +7,64 @@
 
   if (isReducedMotion) return;
 
-  const nekoEl = document.createElement('div');
+  const nekoEl = document.createElement("div");
 
   let nekoPosX = 32;
   let nekoPosY = 32;
 
   let mousePosX = 0;
   let mousePosY = 0;
+
+  // please use data-neko="true" on your A elements that link to another site with oneko-webring.js instead of this
+  // this is deprecated and will eventually be removed
+  const nekoSites = [
+    "localhost",
+  ];
+
+  try {
+    const searchParams = location.search
+      .replace("?", "")
+      .split("&")
+      .map((keyvaluepair) => keyvaluepair.split("="));
+    // This is so much repeated code, I don't like it
+    tmp = searchParams.find((a) => a[0] == "catx");
+    if (tmp && tmp[1]) nekoPosX = parseInt(tmp[1]);
+    tmp = searchParams.find((a) => a[0] == "caty");
+    if (tmp && tmp[1]) nekoPosY = parseInt(tmp[1]);
+    tmp = searchParams.find((a) => a[0] == "catdx");
+    if (tmp && tmp[1]) mousePosX = parseInt(tmp[1]);
+    tmp = searchParams.find((a) => a[0] == "catdy");
+    if (tmp && tmp[1]) mousePosY = parseInt(tmp[1]);
+  } catch (e) {
+    console.error("oneko.js: failed to parse query params.");
+    console.error(e);
+  }
+
+  function onClick(event) {
+    const target = event.target.closest("A");
+    if (target === null || !target.getAttribute("href")) {
+      return;
+    }
+
+    let newLocation;
+    try {
+      newLocation = new URL(target.href);
+    } catch (e) {
+      return;
+    }
+    if (
+      (nekoSites.includes(newLocation.host) && newLocation.pathname == "/") ||
+      target.dataset.neko
+    ) {
+      newLocation.searchParams.append("catx", Math.floor(nekoPosX));
+      newLocation.searchParams.append("caty", Math.floor(nekoPosY));
+      newLocation.searchParams.append("catdx", Math.floor(mousePosX));
+      newLocation.searchParams.append("catdy", Math.floor(mousePosY));
+      event.preventDefault();
+      window.location.href = newLocation.toString();
+    }
+  }
+  document.addEventListener("click", onClick);
 
   let frameCount = 0;
   let idleTime = 0;
@@ -85,27 +136,27 @@
   };
 
   function init() {
-    nekoEl.id = 'oneko';
+    nekoEl.id = "oneko";
     nekoEl.ariaHidden = true;
-    nekoEl.style.width = '32px';
-    nekoEl.style.height = '32px';
-    nekoEl.style.position = 'fixed';
-    nekoEl.style.pointerEvents = 'none';
-    nekoEl.style.imageRendering = 'pixelated';
+    nekoEl.style.width = "32px";
+    nekoEl.style.height = "32px";
+    nekoEl.style.position = "fixed";
+    nekoEl.style.pointerEvents = "none";
+    nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = `${nekoPosX - 16}px`;
     nekoEl.style.top = `${nekoPosY - 16}px`;
-    nekoEl.style.zIndex = 2147483647;
+    nekoEl.style.zIndex = Number.MAX_SAFE_INTEGER;
 
-    let nekoFile = './oneko.gif';
-    const curScript = document.currentScript;
+    let nekoFile = "./oneko.gif"
+    const curScript = document.currentScript
     if (curScript && curScript.dataset.cat) {
-      nekoFile = curScript.dataset.cat;
+      nekoFile = curScript.dataset.cat
     }
     nekoEl.style.backgroundImage = `url(${nekoFile})`;
 
     document.body.appendChild(nekoEl);
 
-    document.addEventListener('mousemove', function (event) {
+    document.addEventListener("mousemove", function (event) {
       mousePosX = event.clientX;
       mousePosY = event.clientY;
     });
@@ -124,9 +175,10 @@
       lastFrameTimestamp = timestamp;
     }
     if (timestamp - lastFrameTimestamp > 100) {
-      lastFrameTimestamp = timestamp;
-      frame();
+      lastFrameTimestamp = timestamp
+      frame()
     }
+
     window.requestAnimationFrame(onAnimationFrame);
   }
 
@@ -149,18 +201,18 @@
       Math.floor(Math.random() * 200) == 0 &&
       idleAnimation == null
     ) {
-      let avalibleIdleAnimations = ['sleeping', 'scratchSelf'];
+      let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
       if (nekoPosX < 32) {
-        avalibleIdleAnimations.push('scratchWallW');
+        avalibleIdleAnimations.push("scratchWallW");
       }
       if (nekoPosY < 32) {
-        avalibleIdleAnimations.push('scratchWallN');
+        avalibleIdleAnimations.push("scratchWallN");
       }
       if (nekoPosX > window.innerWidth - 32) {
-        avalibleIdleAnimations.push('scratchWallE');
+        avalibleIdleAnimations.push("scratchWallE");
       }
       if (nekoPosY > window.innerHeight - 32) {
-        avalibleIdleAnimations.push('scratchWallS');
+        avalibleIdleAnimations.push("scratchWallS");
       }
       idleAnimation =
         avalibleIdleAnimations[
@@ -169,28 +221,28 @@
     }
 
     switch (idleAnimation) {
-      case 'sleeping':
+      case "sleeping":
         if (idleAnimationFrame < 8) {
-          setSprite('tired', 0);
+          setSprite("tired", 0);
           break;
         }
-        setSprite('sleeping', Math.floor(idleAnimationFrame / 4));
+        setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
         if (idleAnimationFrame > 192) {
           resetIdleAnimation();
         }
         break;
-      case 'scratchWallN':
-      case 'scratchWallS':
-      case 'scratchWallE':
-      case 'scratchWallW':
-      case 'scratchSelf':
+      case "scratchWallN":
+      case "scratchWallS":
+      case "scratchWallE":
+      case "scratchWallW":
+      case "scratchSelf":
         setSprite(idleAnimation, idleAnimationFrame);
         if (idleAnimationFrame > 9) {
           resetIdleAnimation();
         }
         break;
       default:
-        setSprite('idle', 0);
+        setSprite("idle", 0);
         return;
     }
     idleAnimationFrame += 1;
@@ -211,7 +263,7 @@
     idleAnimationFrame = 0;
 
     if (idleTime > 1) {
-      setSprite('alert', 0);
+      setSprite("alert", 0);
       // count down after being alerted before moving
       idleTime = Math.min(idleTime, 7);
       idleTime -= 1;
@@ -219,10 +271,10 @@
     }
 
     let direction;
-    direction = diffY / distance > 0.5 ? 'N' : '';
-    direction += diffY / distance < -0.5 ? 'S' : '';
-    direction += diffX / distance > 0.5 ? 'W' : '';
-    direction += diffX / distance < -0.5 ? 'E' : '';
+    direction = diffY / distance > 0.5 ? "N" : "";
+    direction += diffY / distance < -0.5 ? "S" : "";
+    direction += diffX / distance > 0.5 ? "W" : "";
+    direction += diffX / distance < -0.5 ? "E" : "";
     setSprite(direction, frameCount);
 
     nekoPosX -= (diffX / distance) * nekoSpeed;
