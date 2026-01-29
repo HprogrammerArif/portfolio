@@ -45,10 +45,10 @@ export const experiences: Experience[] = [
   {
     isCurrent: true,
     isBlur: true,
-    company: 'good day :3',
-    position: 'Founding Frontend Engineer',
-    location: 'United States (Remote)',
-    image: '/company/promote.png',
+    company: 'Join Venture AI (JVAI)',
+    position: 'Frontend Developer',
+    location: 'Bangladesh (On-site)',
+    image: '/company/jvai.png',
     description: [
       'Architected and developed the complete frontend infrastructure for the platform, a comprehensive solution for creating and managing promotional campaigns.',
       'Led a comprehensive codebase refactoring initiative that improved maintainability, scalability, and development velocity across the entire platform.',
