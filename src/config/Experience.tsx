@@ -8,12 +8,15 @@ import Html from '@/components/technologies/Html';
 import JavaScript from '@/components/technologies/JavaScript';
 import MongoDB from '@/components/technologies/MongoDB';
 import NestJs from '@/components/technologies/NestJs';
+import Netlify from '@/components/technologies/Netlify';
 import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Postman from '@/components/technologies/Postman';
 import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
+import Redux from '@/components/technologies/Redux';
+import Shadcn from '@/components/technologies/Shadcn';
 import TailwindCss from '@/components/technologies/TailwindCss';
 import TypeScript from '@/components/technologies/TypeScript';
 import Vercel from '@/components/technologies/Vercel';
@@ -48,7 +51,7 @@ export const experiences: Experience[] = [
     company: 'Join Venture AI (JVAI)',
     position: 'Frontend Developer',
     location: 'Bangladesh (On-site)',
-    image: '/company/jvai.png',
+    image: '/company/jvai.jpg',
     description: [
       'Architected and developed the complete frontend infrastructure for the platform, a comprehensive solution for creating and managing promotional campaigns.',
       'Led a comprehensive codebase refactoring initiative that improved maintainability, scalability, and development velocity across the entire platform.',
@@ -88,10 +91,11 @@ export const experiences: Experience[] = [
         href: 'https://vercel.com/',
         icon: <Vercel />,
       },
+     
       {
-        name: 'AWS',
-        href: 'https://aws.amazon.com/',
-        icon: <AWS />,
+        name: 'Netlify',
+        href: 'https://www.netlify.com/',
+        icon: <Netlify />,
       },
       {
         name: 'Postman',
@@ -103,11 +107,99 @@ export const experiences: Experience[] = [
         href: 'https://bun.sh/',
         icon: <Bun />,
       },
+      {
+      name: "Shadcn UI",
+      href: "https://ui.shadcn.com/",
+      icon: <Shadcn />,
+      },
+      {
+        name: "Redux",
+        href: "https://redux.js.org/",
+        icon: <Redux />,
+      }
     ],
     website: '#',
     github: '#',
     x: '#',
   },
+  {
+    isCurrent: true,
+    isBlur: true,
+    company: 'Join Venture AI (JVAI)',
+    position: 'Mobile App Developer',
+    location: 'Bangladesh (On-site)',
+    image: '/company/jvai.jpg',
+    description: [
+      'Architected and developed the complete frontend infrastructure for the platform, a comprehensive solution for creating and managing promotional campaigns.',
+      'Led a comprehensive codebase refactoring initiative that improved maintainability, scalability, and development velocity across the entire platform.',
+      'Integrated and optimized backend API connections, implementing efficient data fetching strategies and error handling mechanisms.',
+      'Enhanced user experience and interface design through implementation of consistent design systems, accessibility standards, and performance optimizations.',
+    ],
+    startDate: 'August 2025',
+    endDate: 'Present',
+    technologies: [
+      {
+        name: 'Next.js',
+        href: 'https://nextjs.org/',
+        icon: <NextJs />,
+      },
+      {
+        name: 'Tailwind CSS',
+        href: 'https://tailwindcss.com/',
+        icon: <TailwindCss />,
+      },
+      {
+        name: 'TypeScript',
+        href: 'https://typescriptlang.org/',
+        icon: <TypeScript />,
+      },
+      {
+        name: 'React',
+        href: 'https://react.dev/',
+        icon: <ReactIcon />,
+      },
+      {
+        name: 'Figma',
+        href: 'https://figma.com/',
+        icon: <Figma />,
+      },
+      {
+        name: 'Vercel',
+        href: 'https://vercel.com/',
+        icon: <Vercel />,
+      },
+     
+      {
+        name: 'Netlify',
+        href: 'https://www.netlify.com/',
+        icon: <Netlify />,
+      },
+      {
+        name: 'Postman',
+        href: 'https://www.postman.com/',
+        icon: <Postman />,
+      },
+      {
+        name: 'Bun',
+        href: 'https://bun.sh/',
+        icon: <Bun />,
+      },
+      {
+      name: "Shadcn UI",
+      href: "https://ui.shadcn.com/",
+      icon: <Shadcn />,
+      },
+      {
+        name: "Redux",
+        href: "https://redux.js.org/",
+        icon: <Redux />,
+      }
+    ],
+    website: '#',
+    github: '#',
+    x: '#',
+  },
+
   {
     isCurrent: false,
     company: 'Upsurge Labs',
