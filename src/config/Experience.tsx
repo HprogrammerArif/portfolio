@@ -2,11 +2,14 @@ import AWS from '@/components/technologies/AWS';
 import BootStrap from '@/components/technologies/BootStrap';
 import Bun from '@/components/technologies/Bun';
 import CSS from '@/components/technologies/CSS';
+import Expo from '@/components/technologies/Expo';
 import ExpressJs from '@/components/technologies/ExpressJs';
 import Figma from '@/components/technologies/Figma';
+import Firebase from '@/components/technologies/Firebase';
 import Html from '@/components/technologies/Html';
 import JavaScript from '@/components/technologies/JavaScript';
 import MongoDB from '@/components/technologies/MongoDB';
+import NativeWind from '@/components/technologies/NativeWind';
 import NestJs from '@/components/technologies/NestJs';
 import Netlify from '@/components/technologies/Netlify';
 import NextJs from '@/components/technologies/NextJs';
@@ -16,6 +19,7 @@ import Postman from '@/components/technologies/Postman';
 import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
 import Redux from '@/components/technologies/Redux';
+import Sanetry from '@/components/technologies/Sanetry';
 import Shadcn from '@/components/technologies/Shadcn';
 import TailwindCss from '@/components/technologies/TailwindCss';
 import TypeScript from '@/components/technologies/TypeScript';
@@ -58,7 +62,7 @@ export const experiences: Experience[] = [
       'Integrated and optimized backend API connections, implementing efficient data fetching strategies and error handling mechanisms.',
       'Enhanced user experience and interface design through implementation of consistent design systems, accessibility standards, and performance optimizations.',
     ],
-    startDate: 'August 2025',
+    startDate: 'May 2025',
     endDate: 'Present',
     technologies: [
       {
@@ -130,18 +134,27 @@ export const experiences: Experience[] = [
     location: 'Bangladesh (On-site)',
     image: '/company/jvai.jpg',
     description: [
-      'Architected and developed the complete frontend infrastructure for the platform, a comprehensive solution for creating and managing promotional campaigns.',
-      'Led a comprehensive codebase refactoring initiative that improved maintainability, scalability, and development velocity across the entire platform.',
-      'Integrated and optimized backend API connections, implementing efficient data fetching strategies and error handling mechanisms.',
-      'Enhanced user experience and interface design through implementation of consistent design systems, accessibility standards, and performance optimizations.',
+      'Developed and maintained cross-platform mobile applications using React Native, ensuring high performance and seamless user experience across iOS and Android devices.',
+      'Collaborated closely with UI/UX designers to translate wireframes and mockups into high-quality, responsive mobile interfaces using React Native and related libraries.',
+      'Integrated mobile applications with backend services and APIs, implementing efficient data fetching, state management, and error handling strategies.',
+      'Optimized application performance by implementing code splitting, lazy loading, and memory management techniques, resulting in faster load times and improved user engagement.',
+      'Implemented secure authentication and authorization flows using OAuth 2.0 and JWT tokens, ensuring data privacy and security across all mobile applications.',
+      'Conducted thorough testing, including unit testing, integration testing, and end-to-end testing, to identify and resolve bugs, ensuring application stability and reliability.',
+      'Participated in code reviews and provided constructive feedback to peers, maintaining code quality standards and promoting knowledge sharing within the development team.',
+      'Stayed updated with the latest trends and best practices in mobile development, continuously learning and implementing new technologies to enhance application functionality and user experience.',
     ],
-    startDate: 'August 2025',
+    startDate: 'May 2025',
     endDate: 'Present',
     technologies: [
       {
-        name: 'Next.js',
-        href: 'https://nextjs.org/',
-        icon: <NextJs />,
+        name: 'React Native',
+        href: 'https://reactnative.dev/',
+        icon: <ReactIcon />,
+      },
+      {
+        name: "Native Wind",
+        href: "https://nativewind.dev/",
+        icon: <NativeWind />,
       },
       {
         name: 'Tailwind CSS',
@@ -154,26 +167,12 @@ export const experiences: Experience[] = [
         icon: <TypeScript />,
       },
       {
-        name: 'React',
-        href: 'https://react.dev/',
-        icon: <ReactIcon />,
-      },
-      {
         name: 'Figma',
         href: 'https://figma.com/',
         icon: <Figma />,
       },
-      {
-        name: 'Vercel',
-        href: 'https://vercel.com/',
-        icon: <Vercel />,
-      },
      
-      {
-        name: 'Netlify',
-        href: 'https://www.netlify.com/',
-        icon: <Netlify />,
-      },
+      
       {
         name: 'Postman',
         href: 'https://www.postman.com/',
@@ -184,15 +183,26 @@ export const experiences: Experience[] = [
         href: 'https://bun.sh/',
         icon: <Bun />,
       },
-      {
-      name: "Shadcn UI",
-      href: "https://ui.shadcn.com/",
-      icon: <Shadcn />,
-      },
+      
       {
         name: "Redux",
         href: "https://redux.js.org/",
         icon: <Redux />,
+      },
+      {
+        name: "Firebase",
+        href: "https://firebase.google.com/",
+        icon: <Firebase />,
+      },
+      {
+        name: "Expo",
+        href: "https://expo.dev/",
+        icon: <Expo />,
+      },
+      {
+        name: "Sanetry",
+        href: "https://sentry.io/",
+        icon: <Sanetry />,
       }
     ],
     website: '#',
