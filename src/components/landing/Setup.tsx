@@ -15,12 +15,12 @@ const setup = [
     icon: <Gear className="size-4" />,
     href: '/gears',
   },
-  {
-    name: 'VS Code / Cursor Setup',
-    description: 'VS Code / Cursor Setup i use daily.',
-    icon: <Code className="size-4" />,
-    href: '/setup',
-  },
+  // {
+  //   name: 'VS Code / Cursor Setup',
+  //   description: 'VS Code / Cursor Setup i use daily.',
+  //   icon: <Code className="size-4" />,
+  //   href: '/setup',
+  // },
 ];
 
 export default function Setup() {
