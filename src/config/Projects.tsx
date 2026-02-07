@@ -1,7 +1,11 @@
 import Appwrite from '@/components/technologies/Appwrite';
 import Bun from '@/components/technologies/Bun';
+import DaisyUi from '@/components/technologies/DaisyUi';
+import Expo from '@/components/technologies/Expo';
 import ExpressJs from '@/components/technologies/ExpressJs';
+import Firebase from '@/components/technologies/Firebase';
 import Github from '@/components/technologies/Github';
+import JavaScript from '@/components/technologies/JavaScript';
 import MDXIcon from '@/components/technologies/MDXIcon';
 import MongoDB from '@/components/technologies/MongoDB';
 import Motion from '@/components/technologies/Motion';
@@ -22,9 +26,79 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
+    title: 'Co-parenting - A React native Parenting Platform App',
+    description:
+      'A comprehensive child management co-parenting platform with features like child tracking, expenses tracking, communication, ai refine messages and suggestions, chat with ai, schedule, and more ',
+    image: '/project/co-parenting-app.png',
+    video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
+    link: 'playstore.co-parenting-app',
+    technologies: [
+      { name: 'React native', icon: <ReactIcon key="react" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+
+      { name: 'Expo Go', icon: <Expo key="expo" /> },
+      {name: 'Firebase', icon: <Firebase key="firebase" /> },
+      {name: 'Sanity', icon: <Sanity key="sanity" /> },
+    ],
+    github: 'https://github.com/HprogrammerArif/co_parenting_update.git',
+    live: 'https://co-parenting-app.vercel.app',
+    details: true,
+    projectDetailsPageSlug: '/projects/co-parenting-app',
+    isWorking: true,
+  },
+  {
+    title: 'Gift Guru - A React native Social Media Platform App',
+    description:
+      'A comprehensive social media platform with features like advertisement, post, scroll differect post from different users, feed, advance analytics, and more ',
+    image: '/project/gift-guru-app.png',
+    video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
+    link: 'playstore.co-parenting-app',
+    technologies: [
+      { name: 'React native', icon: <ReactIcon key="react" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+
+      { name: 'Expo Go', icon: <Expo key="expo" /> },
+      {name: 'Firebase', icon: <Firebase key="firebase" /> },
+      {name: 'Sanity', icon: <Sanity key="sanity" /> },
+    ],
+    github: 'https://github.com/HprogrammerArif/gift_guru.git',
+    live: 'https://gift-guru-app.vercel.app',
+    details: true,
+    projectDetailsPageSlug: '/projects/gift-guru-app',
+    isWorking: true,
+  },
+  {
+    title: 'Stayvision - Colaborative Study Hub',
+    description:
+      'A web platform designed for students to read and share notes, study materials and lesson easily. Built with a modern tech stack, it ensures an easy-to-use, visually appealing, and responsive experience.',
+    image: '/project/stay-vision-study-hub.png',
+    video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
+    link: 'https://stayvision-e5db4.web.app/',
+    technologies: [
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'JavaScript', icon: <JavaScript key="javascript" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Firebase', icon: <Firebase key="firebase" /> },
+      { name: 'DaisyUi', icon: <DaisyUi key="daisyui" /> },
+    ],
+    github: 'https://github.com/HprogrammerArif/StayVision-Client.git',
+    live: 'https://stayvision-e5db4.web.app/',
+    details: true,
+    projectDetailsPageSlug: '/projects/stayvision',
+    isWorking: true,
+  },
+
+
+  {
     title: 'NotesBuddy',
     description:
-      'A comprehensive study platform with notes, flashcards, quizzes, AI chatbot, and interactive learning tools',
+      'A web platform designed for students to read and share notes, study materials and lesson easily. Built with a modern tech stack, it ensures an easy-to-use, visually appealing, and responsive experience.',
     image: '/project/notesbuddy.png',
     video: 'https://ik.imagekit.io/hokb3mrdr/notesbuddy.mp4?tr=orig',
     link: 'https://notesbuddy.in',
@@ -35,6 +109,7 @@ export const projects: Project[] = [
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
       { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Firebase', icon: <Firebase key="firebase" /> },
       { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
       { name: 'MDX', icon: <MDXIcon key="mdx" /> },
     ],
