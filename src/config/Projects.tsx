@@ -28,7 +28,7 @@ export const projects: Project[] = [
   {
     title: 'Co-parenting - A React native Parenting Platform App',
     description:
-      'A comprehensive child management co-parenting platform with features like child tracking, expenses tracking, communication, ai refine messages and suggestions, chat with ai, schedule, and more ',
+      'A comprehensive React native cross platform child management co-parenting app with features like child tracking, expenses tracking, communication, ai refine messages and suggestions, chat with ai, schedule, and more ',
     image: '/project/co-parenting-app.png',
     video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
     link: 'playstore.co-parenting-app',
@@ -51,7 +51,7 @@ export const projects: Project[] = [
   {
     title: 'Gift Guru - A React native Social Media Platform App',
     description:
-      'A comprehensive social media platform with features like advertisement, post, scroll differect post from different users, feed, advance analytics, and more ',
+      'A comprehensive React native cross platform social media app with features like advertisement, post, scroll differect post from different users, feed, advance analytics, and more ',
     image: '/project/gift-guru-app.png',
     video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
     link: 'playstore.co-parenting-app',
@@ -89,9 +89,33 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/HprogrammerArif/StayVision-Client.git',
     live: 'https://stayvision-e5db4.web.app/',
-    details: true,
+    details: false,
     projectDetailsPageSlug: '/projects/stayvision',
-    isWorking: true,
+    isWorking: false,
+  },
+
+
+  {
+    title: 'StayVista | A hotel management platform',
+    description:
+      'A web platform designed for hotel booking and management. Built with a modern tech stack, it ensures an easy-to-use, visually appealing, and responsive experience. Include features like room booking, payment gateway integration using stripe, user authentication, role based dashboard For gust, host, admin- Implement private route- Use imageBB for upload image- Use hooks for secure and public route- Use TanStack for fatching, update, delete (State management) and more.',
+    image: '/project/stay-vista-hotel-management.png',
+    video: 'https://ik.imagekit.io/hokb3mrdr/notesbuddy.mp4?tr=orig',
+    link: 'https://stayvista-arif.web.app/',
+    technologies: [
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'JavaScript', icon: <JavaScript key="javascript" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Firebase', icon: <Firebase key="firebase" /> },
+       { name: 'DaisyUi', icon: <DaisyUi key="daisyui" /> },
+    ],
+    github: 'https://github.com/HprogrammerArif/stay-vista-client.git',
+    live: 'https://stayvista-arif.web.app/',
+    details: false,
+    projectDetailsPageSlug: '/projects/stay-vista-hotel-management',
+    isWorking: false,
   },
 
 
