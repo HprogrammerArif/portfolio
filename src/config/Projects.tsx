@@ -3,6 +3,7 @@ import Bun from '@/components/technologies/Bun';
 import DaisyUi from '@/components/technologies/DaisyUi';
 import Expo from '@/components/technologies/Expo';
 import ExpressJs from '@/components/technologies/ExpressJs';
+import FabricJs from '@/components/technologies/FabricJs';
 import Firebase from '@/components/technologies/Firebase';
 import Github from '@/components/technologies/Github';
 import JavaScript from '@/components/technologies/JavaScript';
@@ -72,6 +73,52 @@ export const projects: Project[] = [
     isWorking: true,
   },
   {
+    title: 'Gift Guru - A Social Media Web Platform For Appliate Marketing',
+    description:
+      'A comprehensive social media web platform for appliate marketing with features like advertisement, post, scroll differect post from different users, feed, advance analytics, and more ',
+    image: '/project/gift-guru-affliate-social-media.png',
+    video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
+    link: 'https://gift-guru-media.vercel.app/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      {name: 'Firebase', icon: <Firebase key="firebase" /> },
+    ],
+    github: 'https://github.com/HprogrammerArif/Appiliate-Media.git',
+    live: 'https://gift-guru-media.vercel.app',
+    details: false,
+    projectDetailsPageSlug: '/projects/gift-guru-media',
+    isWorking: true,
+  },
+
+
+  {
+    title: 'Sora - A Ai Power Project Management Platform',
+    description:
+      'A Ai power comprehensive project management platform with features like ai analysis project from project, comprehensive feedback, project tracking, task management, project progress, project location maps and more ',
+    image: '/project/sora-project-management.png',
+    video: 'https://ik.imagekit.io/hokb3mrdr/sora.mp4',
+    link: 'https://sora-project-management.vercel.app',
+    technologies: [
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
+      { name: 'Firebase', icon: <Firebase key="firebase" /> },
+    ],
+    github: 'https://github.com/HprogrammerArif/SORA.git',
+    live: 'https://sora-project-management.vercel.app',
+    details: false,
+    projectDetailsPageSlug: '/projects/sora-project-management',
+    isWorking: false,
+  },
+
+  {
     title: 'Stayvision - Colaborative Study Hub',
     description:
       'A web platform designed for students to read and share notes, study materials and lesson easily. Built with a modern tech stack, it ensures an easy-to-use, visually appealing, and responsive experience.',
@@ -119,6 +166,31 @@ export const projects: Project[] = [
   },
 
 
+   {
+    title: 'Mascotforge - A Ai Power Custom Logo & Branding Platform',
+    description:
+      'A Ai power comprehensive custom logo making, svg editor, designing & branding platform with features like logo making, svg editor, designing & branding platform and more ',
+    image: '/project/mascot-frog-svg-editor.png',
+    video: 'https://ik.imagekit.io/hokb3mrdr/mascotforge.mp4',
+    link: 'https://mascotforge.netlify.app/',
+    technologies: [
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Fabric.js', icon: <FabricJs key="fabricjs" /> },
+      { name: 'Netlify', icon: <Netlify key="netlify" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'Firebase', icon: <Firebase key="firebase" /> },
+    ],
+    github: 'https://github.com/HprogrammerArif/darkdot.git',
+    live: 'https://mascotforge.netlify.app/',
+    details: false,
+    projectDetailsPageSlug: '/projects/mascotforge',
+    isWorking: false,
+  },
+
+
+
   {
     title: 'SamNexus | A multivendor e-commerce platform',
     description:
@@ -140,6 +212,33 @@ export const projects: Project[] = [
     projectDetailsPageSlug: '/projects/sam-nexus',
     isWorking: false,
   },
+
+
+
+    {
+    title: 'Swish - A Project Bidding Platform',
+    description:
+      'A comprehensive project bidding web platform for different types of companies and freelancers where they can post their projects and bid on them and more.',
+    image: '/project/swish-job-bidding.png',
+    video: 'https://ik.imagekit.io/hokb3mrdr/swish.mp4',
+    link: 'https://swishmaa.netlify.app/',
+    technologies: [
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Netlify', icon: <Netlify key="netlify" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
+      { name: 'Firebase', icon: <Firebase key="firebase" /> },
+    ],
+    github: 'https://github.com/HprogrammerArif/swish.git',
+    live: 'https://swishmaa.netlify.app/',
+    details: false,
+    projectDetailsPageSlug: '/projects/swish',
+    isWorking: true,
+  },
+
+
 
   // {
   //   title: 'NotesBuddy',
@@ -217,6 +316,7 @@ export const projects: Project[] = [
   //   projectDetailsPageSlug: '/projects/syncify',
   //   isWorking: true,
   // },
+
   // {
   //   title: 'Pasandida Aurat',
   //   description:
