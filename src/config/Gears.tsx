@@ -67,6 +67,7 @@ export const webExtensions = [
 export const software = [
   // { name: 'Dia', href: 'https://www.diabrowser.com/' },
   { name: 'Cursor', href: 'https://cursor.sh/' },
+  { name: 'Antigravity', href: 'https://antigravity.ai/' },
   { name: 'Notion', href: 'https://www.notion.so/desktop' },
   { name: 'TickTick', href: 'https://ticktick.com/download' },
   { name: 'OBS Studio', href: 'https://obsproject.com/' },
