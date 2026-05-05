@@ -44,23 +44,32 @@ export async function generateMetadata({
     };
   }
 
-  const { title, description, image } = post.frontmatter;
+  const { title, description, image, date, tags } = post.frontmatter;
+  const postUrl = `${siteConfig.url}/blog/${slug}`;
 
   return {
     metadataBase: new URL(siteConfig.url),
     title,
     description,
+    alternates: {
+      canonical: postUrl,
+    },
     openGraph: {
       title,
       description,
-      images: [image],
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
       type: 'article',
+      url: postUrl,
+      publishedTime: date,
+      authors: [siteConfig.author.name],
+      tags,
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
       images: [image],
+      creator: siteConfig.author.twitter,
     },
   };
 }
@@ -74,8 +83,28 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
   const relatedPosts = await getRelatedPosts(slug, 3);
 
+  const { title, description, image, date } = post.frontmatter;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description,
+    image: `${siteConfig.url}${image}`,
+    datePublished: date,
+    url: `${siteConfig.url}/blog/${slug}`,
+    author: {
+      '@type': 'Person',
+      name: siteConfig.author.name,
+      url: siteConfig.url,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Container className="py-16">
         <div className="space-y-12">
           {/* Back Button */}
