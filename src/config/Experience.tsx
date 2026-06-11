@@ -122,7 +122,7 @@ export const experiences: Experience[] = [
   {
     isCurrent: true,
     isBlur: true,
-    company: 'Join Venture AI (JVAI)',
+    company: 'Join Venture AI (JVAI).',
     position: 'Mobile App Developer',
     location: 'Bangladesh (On-site)',
     image: '/company/jvai.jpg',

@@ -3,10 +3,12 @@ export interface Project {
   description: string;
   image: string;
   video?: string;
-  link: string;
+  link?: string;
+  appStoreLink?: string;
+  playStoreLink?: string;
   technologies: { name: string; icon: React.ReactNode }[];
   github?: string;
-  live: string;
+  live?: string;
   details: boolean;
   projectDetailsPageSlug: string;
   isWorking: boolean;

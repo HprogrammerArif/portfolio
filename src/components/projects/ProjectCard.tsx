@@ -15,6 +15,7 @@ import {
 import { type Project } from '@/types/project';
 import { Link } from 'next-view-transitions';
 import Image from 'next/image';
+import { AppleLogo, GooglePlayLogo } from '@phosphor-icons/react';
 import React, { useState } from 'react';
 
 import ArrowRight from '../svgs/ArrowRight';
@@ -77,23 +78,57 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </h3>
             </Link>
             <div className="flex items-center gap-2">
-              <Tooltip>
-                <TooltipTrigger>
-                  <Link
-                    className="text-secondary hover:text-primary flex size-6 items-center justify-center transition-colors"
-                    href={project.link}
-                    target="_blank"
-                  >
-                    <Website />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>View Website</p>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <TooltipTrigger>
-                  {project.github && (
+              {project.link && (
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Link
+                      className="text-secondary hover:text-primary flex size-6 items-center justify-center transition-colors"
+                      href={project.link}
+                      target="_blank"
+                    >
+                      <Website />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>View Website</p>
+                  </TooltipContent>
+                </Tooltip>
+              )}
+              {project.playStoreLink && (
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Link
+                      className="text-secondary hover:text-primary flex size-6 items-center justify-center transition-colors"
+                      href={project.playStoreLink}
+                      target="_blank"
+                    >
+                      <GooglePlayLogo weight="fill" className="size-5" />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Play Store</p>
+                  </TooltipContent>
+                </Tooltip>
+              )}
+              {project.appStoreLink && (
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Link
+                      className="text-secondary hover:text-primary flex size-6 items-center justify-center transition-colors"
+                      href={project.appStoreLink}
+                      target="_blank"
+                    >
+                      <AppleLogo weight="fill" className="size-5" />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>App Store</p>
+                  </TooltipContent>
+                </Tooltip>
+              )}
+              {project.github && (
+                <Tooltip>
+                  <TooltipTrigger>
                     <Link
                       className="text-secondary hover:text-primary flex size-6 items-center justify-center transition-colors"
                       href={project.github}
@@ -101,12 +136,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
                     >
                       <Github />
                     </Link>
-                  )}
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>View GitHub</p>
-                </TooltipContent>
-              </Tooltip>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>View GitHub</p>
+                  </TooltipContent>
+                </Tooltip>
+              )}
             </div>
           </div>
 

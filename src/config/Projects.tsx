@@ -22,7 +22,7 @@ export const projects: Project[] = [
       'A comprehensive React native cross platform child management co-parenting app with features like child tracking, expenses tracking, communication, ai refine messages and suggestions, chat with ai, schedule, and more ',
     image: '/project/co-parenting-app.png',
     video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
-    link: 'playstore.co-parenting-app',
+    link: 'https://www.floruit.co.uk/',
     technologies: [
       { name: 'React native', icon: <ReactIcon key="react" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
@@ -34,18 +34,23 @@ export const projects: Project[] = [
       {name: 'Sentry', icon: <Sentry key="Sentry" /> },
     ],
     github: 'https://github.com/HprogrammerArif/co_parenting_update.git',
-    live: 'https://co-parenting-app.vercel.app',
+    live: 'https://www.floruit.co.uk/',
+    appStoreLink: 'https://apps.apple.com/us/app/floruit-co-parenting-app/id6761601644',
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.floruit.app&pcampaignid=web_share',
     details: true,
     projectDetailsPageSlug: '/projects/co-parenting-app',
     isWorking: true,
   },
+
+
+
   {
     title: 'Gift Guru - A React native Social Media Platform App',
     description:
       'A comprehensive React native cross platform social media app with features like advertisement, post, scroll differect post from different users, feed, advance analytics, and more ',
     image: '/project/gift-guru-app.png',
     video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
-    link: 'playstore.co-parenting-app',
+    link: 'https://www.findrya.co.uk/',
     technologies: [
       { name: 'React native', icon: <ReactIcon key="react" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
@@ -57,18 +62,22 @@ export const projects: Project[] = [
       {name: 'Sentry', icon: <Sentry key="Sentry" /> },
     ],
     github: 'https://github.com/HprogrammerArif/gift_guru.git',
-    live: 'https://gift-guru-app.vercel.app',
+    live: 'https://www.findrya.co.uk/',
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.floruit.app&pcampaignid=web_share',
+    appStoreLink: 'https://apps.apple.com/us/app/floruit-co-parenting-app/id6761601644',
     details: true,
     projectDetailsPageSlug: '/projects/gift-guru-app',
     isWorking: true,
   },
+
+
   {
     title: 'Gift Guru - A Social Media Web Platform For Appliate Marketing',
     description:
       'A comprehensive social media web platform for appliate marketing with features like advertisement, post, scroll differect post from different users, feed, advance analytics, and more ',
     image: '/project/gift-guru-affliate-social-media.png',
     video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
-    link: 'https://gift-guru-media.vercel.app/',
+    link: 'https://www.findrya.co.uk/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'React', icon: <ReactIcon key="react" /> },
@@ -78,7 +87,7 @@ export const projects: Project[] = [
       {name: 'Firebase', icon: <Firebase key="firebase" /> },
     ],
     github: 'https://github.com/HprogrammerArif/Appiliate-Media.git',
-    live: 'https://gift-guru-media.vercel.app',
+    live: 'https://www.findrya.co.uk',
     details: false,
     projectDetailsPageSlug: '/projects/gift-guru-media',
     isWorking: true,
