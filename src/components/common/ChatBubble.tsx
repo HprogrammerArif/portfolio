@@ -28,7 +28,7 @@ interface Message {
   isStreaming?: boolean;
 }
 
-const initialMessages: Message[] = [
+const getInitialMessages = (): Message[] => [
   {
     id: 1,
     text: "Hello! I'm Rakib Hasan Arif's Portfolio Assistant. How can I help you?",
@@ -41,7 +41,7 @@ const initialMessages: Message[] = [
 ];
 
 const ChatBubble: React.FC = () => {
-  const [messages, setMessages] = useState<Message[]>(initialMessages);
+  const [messages, setMessages] = useState<Message[]>(getInitialMessages);
   const [newMessage, setNewMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
