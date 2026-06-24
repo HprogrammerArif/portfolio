@@ -21,7 +21,7 @@ export const projects: Project[] = [
     description:
       'A comprehensive React native cross platform child management co-parenting app with features like child tracking, expenses tracking, communication, ai refine messages and suggestions, chat with ai, schedule, and more ',
     image: '/project/co-parenting-app.png',
-    video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
+    video: 'https://ik.imagekit.io/ax29mr7pl/Screen%20Recording%202026-06-24%20095539.mp4',
     link: 'https://www.floruit.co.uk/',
     technologies: [
       { name: 'React native', icon: <ReactIcon key="react" /> },
@@ -49,8 +49,8 @@ export const projects: Project[] = [
     description:
       'A comprehensive React native cross platform social media app with features like advertisement, post, scroll differect post from different users, feed, advance analytics, and more ',
     image: '/project/gift-guru-app.png',
-    video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
-    link: 'https://www.findrya.co.uk/',
+    video: 'https://ik.imagekit.io/1brn1hp6y/screen-20260624-100557%20(1).mp4',
+    link: 'https://www.findrya.co.uk/app',
     technologies: [
       { name: 'React native', icon: <ReactIcon key="react" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
@@ -62,7 +62,7 @@ export const projects: Project[] = [
       {name: 'Sentry', icon: <Sentry key="Sentry" /> },
     ],
     github: 'https://github.com/HprogrammerArif/gift_guru.git',
-    live: 'https://www.findrya.co.uk/',
+    live: 'https://www.findrya.co.uk/app',
     appStoreLink: 'https://apps.apple.com/us/app/giftGuru/id676160164454663',
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.giftGuru.app&pcampaignid=web_share',
     details: true,
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     description:
       'A comprehensive social media web platform for appliate marketing with features like advertisement, post, scroll differect post from different users, feed, advance analytics, and more ',
     image: '/project/gift-guru-affliate-social-media.png',
-    video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
+    video: 'https://ik.imagekit.io/1brn1hp6y/Screen%20Recording%202026-06-24%20165916.mp4',
     link: 'https://www.findrya.co.uk/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     description:
       'A Ai power comprehensive project management platform with features like ai analysis project from project, comprehensive feedback, project tracking, task management, project progress, project location maps and more ',
     image: '/project/sora-project-management.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/sora.mp4',
+    video: 'https://ik.imagekit.io/ax29mr7pl/Video%20Project.mp4',
     link: 'https://sora-project-management.vercel.app',
     technologies: [
       { name: 'React', icon: <ReactIcon key="react" /> },
