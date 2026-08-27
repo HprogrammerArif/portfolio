@@ -69,7 +69,7 @@ export const projects: Project[] = [
     video: 'https://ik.imagekit.io/ax29mr7pl/Screen%20Recordi%202026-06-24%20095539.mp4',
     link: 'https://ticketlove.net/',
     technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
       { name: 'Nodejs', icon: <NodeJs key="nodejs" /> },
@@ -110,6 +110,30 @@ export const projects: Project[] = [
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.giftGuru.app&pcampaignid=web_share',
     details: true,
     projectDetailsPageSlug: '/projects/gift-guru-app',
+    isWorking: true,
+  },
+
+
+  {
+    title: 'Ezmart - A multi vendor E-Commerce Platform',
+    description:
+      'A comprehensive multi vendor E-Commerce platform with features like product listing, product details, add to cart, checkout, payment gateway, order management, user management, admin management, ',
+    image: '/project/ezmart.png',
+    video: 'https://ik.imagekit.io/1brn1hp6y/screen-2026w0624-100557%20(1).mp4',
+    link: 'https://ezmart-1n3s.vercel.app/',
+    technologies: [
+         { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Nodejs', icon: <NodeJs key="nodejs" /> },
+      { name: 'Express.js', icon: <ExpressJs key="express.js" /> },
+      { name: 'PostgreSQL', icon: <PostgreSQL key="postgres" /> },
+    ],
+    github: 'https://github.com/HprogrammerArif/ezmart',
+    live: 'https://ezmart-1n3s.vercel.app/',
+   
+    details: true,
+    projectDetailsPageSlug: '/projects/ezmart',
     isWorking: true,
   },
 
