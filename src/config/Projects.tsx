@@ -1,11 +1,14 @@
 import DaisyUi from '@/components/technologies/DaisyUi';
 import Expo from '@/components/technologies/Expo';
+import ExpressJs from '@/components/technologies/ExpressJs';
 import FabricJs from '@/components/technologies/FabricJs';
 import Firebase from '@/components/technologies/Firebase';
 import JavaScript from '@/components/technologies/JavaScript';
 import MongoDB from '@/components/technologies/MongoDB';
 import Netlify from '@/components/technologies/Netlify';
 import NextJs from '@/components/technologies/NextJs';
+import NodeJs from '@/components/technologies/NodeJs';
+import PostgreSQL from '@/components/technologies/PostgreSQL';
 import ReactIcon from '@/components/technologies/ReactIcon';
 import Sentry from '@/components/technologies/Sentry';
 import Shadcn from '@/components/technologies/Shadcn';
@@ -39,6 +42,46 @@ export const projects: Project[] = [
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.floruit.app&pcampaignid=web_share',
     details: true,
     projectDetailsPageSlug: '/projects/co-parenting-app',
+    isWorking: true,
+  },
+
+
+//   First time working with the TicketNetwork API!
+
+// For the past month, I single-handedly built a ticket reselling platform from scratch using TicketNetwork's third-party API.
+
+// 🔗 Check it out: https://ticketlove.net/
+
+// Users can purchase real event tickets, and the client earns commission on every sale. Real tickets. Real transactions. Real cash flow. 💰
+
+// So I built this platform single-handedly from scratch to deployment 
+// Full TicketNetwork API integration 
+// Deployed on Hostinger 
+// Initial launch complete — still improving & adding features
+
+// Had a great experience working with TicketNetwork's ecosystem.
+
+  {
+    title: 'ticketlove - a ticket reselling platform using ticketnetworks api',
+    description:
+      'A ticket reselling platform using ticketnetworks api.Users can purchase real event tickets, and the client earns commission on every sale. Real tickets. Real transactions. Real cash flow happen here.',
+    image: '/project/ticketlove.png',
+    video: 'https://ik.imagekit.io/ax29mr7pl/Screen%20Recordi%202026-06-24%20095539.mp4',
+    link: 'https://ticketlove.net/',
+    technologies: [
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Nodejs', icon: <NodeJs key="nodejs" /> },
+      { name: 'Express.js', icon: <ExpressJs key="express.js" /> },
+      { name: 'PostgreSQL', icon: <PostgreSQL key="postgres" /> },
+
+    
+    ],
+    github: 'https://github.com/HprogrammerArif/ticket-resell-third-party-api.git',
+    live: 'https://ticketlove.net/',
+    details: true,
+    projectDetailsPageSlug: '/projects/ticketlove',
     isWorking: true,
   },
 
